@@ -32,9 +32,9 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH     &kp EQUAL  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &kp DEL
-&trans      &kp AMPERSAND    &kp SINGLE_QUOTE   &kp DOLLAR   &kp PLUS   &kp SLASH     &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp COLON      &trans
-&trans      &kp PIPE         &kp GRAVE          &kp PERCENT  &kp EQUAL  &kp TILDE     &trans                &trans                 &kp QUESTION      &kp UNDERSCORE     &kp CARET      &kp AT_SIGN  &kp SEMICOLON  &trans
+&kp ESCAPE  &kp LS(N1)      &kp LS(N2)    &kp LS(N3)  &kp LS(MINUS)  &kp LS(SQT)  &kp LS(N8)     &kp LS(N9)      &kp RBKT        &kp NON_US_HASH      &kp INT_RO  &kp DEL
+&trans      &kp LS(N6)      &kp LS(N7)    &kp LS(N4)  &kp LS(SEMI)   &kp SLASH    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(RBKT)    &kp LS(NON_US_HASH)  &kp SQT     &trans
+&trans      &kp LS(INT_YEN)  &kp LS(LBKT)  &kp LS(N5)  &kp LS(MINUS)  &kp LS(EQUAL)  &trans        &trans          &kp LS(SLASH)  &kp LS(INT_RO)       &kp EQUAL   &kp LBKT  &kp SEMI  &trans
 &mo 3       &trans           &trans             &trans       &trans     &trans        &trans                &mo 3                  &trans            &trans             &trans         &trans
             >;
         };
