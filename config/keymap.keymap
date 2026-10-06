@@ -9,12 +9,22 @@
 
         MKP_LCLK {
             bindings = <&mkp LCLK>;
-            key-positions = <19 20>;
+            key-positions = <19 8>;
         };
 
         MKP_RCLK {
             bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
+        };
+
+        MKP_MCLK {
+            bindings = <&mkp MCLK>;
+            key-positions = <19 9>;
+        };
+
+        SCROLL {
+            bindings = <&mo 4>;
+            key-positions = <19 20>;
         };
     };
 
