@@ -9,22 +9,32 @@
 
         MKP_LCLK {
             bindings = <&mkp LCLK>;
-            key-positions = <19 8>;
+            key-positions = <19 20>;
         };
 
         MKP_RCLK {
             bindings = <&mkp RCLK>;
-            key-positions = <8 9>;
+            key-positions = <20 21>;
         };
 
         MKP_MCLK {
             bindings = <&mkp MCLK>;
-            key-positions = <19 9>;
+            key-positions = <34 35>;
         };
 
         SCROLL {
             bindings = <&mo 4>;
-            key-positions = <19 20>;
+            key-positions = <19 21>;
+        };
+
+        IME_OFF {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <25 26>;
+        };
+
+        IME_ON {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <35 36>;
         };
     };
 
@@ -35,7 +45,7 @@
             bindings = <
 &kp TAB    &kp Q         &kp W  &kp E  &kp R         &kp T  &kp Y             &kp U           &kp I  &kp O  &kp P      &kp BSPC
 &kp LCTRL  &kp A         &kp S  &kp D  &kp F         &kp G  &kp H             &kp J           &kp K  &kp L  &kp MINUS  &kp ENTER
-&kp LSHFT  &kp Z         &kp X  &kp C  &kp V         &kp B  &kp INT_MUHENKAN  &kp INT_HENKAN  &kp N  &kp M  &kp COMMA  &kp DOT    &kp SLASH     &kp RSHFT
+&kp LSHFT  &kp Z         &kp X  &kp C  &kp V         &kp B  &none             &none           &kp N  &kp M  &kp COMMA  &kp DOT    &kp SLASH     &kp RSHFT
 &mo 2      &kp LEFT_GUI  &none  &none  &kp LEFT_ALT  &mo 1  &kp SPACE         &mo 2           &mo 2  &none  &none      &mo 1
             >;
         };
