@@ -10,8 +10,6 @@ manifest:
       url-base: https://github.com/kumamuk-git
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: amgskobo
-      url-base: https://github.com/amgskobo
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -36,8 +34,5 @@ manifest:
     - name: zmk-scroll-snap
       remote: kot149
       revision: v1
-    - name: zmk-input-inertia
-      remote: amgskobo
-      revision: 8d973612474c6c65d6f83917a9d677f12e1ea827
   self:
     path: config
