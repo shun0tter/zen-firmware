@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/kumamuk-git
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: mjmjm0101
+      url-base: https://github.com/mjmjm0101
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -34,5 +36,8 @@ manifest:
     - name: zmk-scroll-snap
       remote: kot149
       revision: v1
+    - name: zmk-input-processor-scroll-inertia
+      remote: mjmjm0101
+      revision: f7dadefee453d555fe066d13a3de3bb60739b45e
   self:
     path: config
