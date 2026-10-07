@@ -1,0 +1,3 @@
+name: input-inertia-pmw3610
+append:
+  EXTRA_DTC_OVERLAY_FILE: input-inertia-pmw3610.overlay

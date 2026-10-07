@@ -1,3 +1,0 @@
-name: scroll-inertia-pmw3610
-append:
-  EXTRA_DTC_OVERLAY_FILE: scroll-inertia-pmw3610.overlay

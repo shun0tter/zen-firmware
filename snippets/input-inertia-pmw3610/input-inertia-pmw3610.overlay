@@ -1,0 +1,37 @@
+#include <zmk-input-inertia/input/processor/input_inertia.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+
+// Right (central) PMW3610 build only. Apply after input-trackball-pmw3610;
+// this replaces its pointing_listener chains. Cursor and scroll must share &zip_inertia.
+
+&zip_inertia {
+    trigger-ms = <35>;
+
+    move-decay-factor-int = <90>;
+    move-report-interval-ms = <35>;
+    move-threshold-start = <15>;
+    move-threshold-stop = <1>;
+
+    scroll-decay-factor-int = <85>;
+    scroll-report-interval-ms = <65>;
+    scroll-threshold-start = <2>;
+    scroll-threshold-stop = <0>;
+
+    cancel-scroll-inertia-on-ctrl;
+};
+
+&pointing_listener {
+    input-processors =
+        <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>,
+        <&zip_inertia>;
+
+    scroller {
+        input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_xy_to_scroll_mapper>,
+            <&pmw3610_scroll_scaler 1 15>,
+            <&zip_inertia>;
+        // Scroll events must not fall through to the base chain and hit &zip_inertia twice.
+        /delete-property/ process-next;
+    };
+};
